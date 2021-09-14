@@ -46,7 +46,7 @@ route.post('/',async (req,res)=>
    }
 })
 
-//// ------------------------ MIDDLEWARE FUNC() For finding User ---------------//// 
+//// ------------------------ MIDDLEWARE FUNC() For finding User by post ---------------//// 
 
 async function finduserById(req,res,next)
 {
