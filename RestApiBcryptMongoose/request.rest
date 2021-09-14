@@ -1,6 +1,7 @@
+### to get all users
 GET http://localhost:4545/users
 
-###  Create User
+### to Create User
 POST http://localhost:4545/users
 Content-Type: application/json 
  
@@ -11,7 +12,7 @@ Content-Type: application/json
     "age" : 22
 }
 
-### Get user
+### to Get an user
 
 GET http://localhost:4545/users/6140d539bbe3781430e0bbe1/1234
 
@@ -24,25 +25,11 @@ Content-Type: application/json
     "password" : "1234"
 }
 
-###
+### Updating value of an user by user id
 PATCH http://localhost:4545/users/updateuser/6140d539bbe3781430e0bbe1
 Content-Type: application/json
 
 {
     "name" : "aman",
     "email" : "aman@gmail.com"
-}
-
-
-
-###
-
-PATCH http://localhost:4545/users/updateuser
-Content-Type: application/json
-
-{   
-    id : "6140d539bbe3781430e0bbe1"
-    password : "1234"
-    name : "ishu goel"
-    email : "amankaushik@gmail.com"
 }
