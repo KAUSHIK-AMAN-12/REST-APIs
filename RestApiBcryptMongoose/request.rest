@@ -1,0 +1,48 @@
+GET http://localhost:4545/users
+
+###  Create User
+POST http://localhost:4545/users
+Content-Type: application/json 
+ 
+{
+    "name" : "ishu goel",
+    "password" : "1234",
+    "email" : "ishu@gmail.com",
+    "age" : 22
+}
+
+### Get user
+
+GET http://localhost:4545/users/6140d539bbe3781430e0bbe1/1234
+
+### Get user by POST method
+POST http://localhost:4545/users/getuser
+Content-Type: application/json
+
+{
+    "id" : "6112b50604684c22a8210469",
+    "password" : "1234"
+}
+
+###
+PATCH http://localhost:4545/users/updateuser/6140d539bbe3781430e0bbe1
+Content-Type: application/json
+
+{
+    "name" : "aman",
+    "email" : "aman@gmail.com"
+}
+
+
+
+###
+
+PATCH http://localhost:4545/users/updateuser
+Content-Type: application/json
+
+{   
+    id : "6140d539bbe3781430e0bbe1"
+    password : "1234"
+    name : "ishu goel"
+    email : "amankaushik@gmail.com"
+}
