@@ -6,17 +6,17 @@ POST http://localhost:4545/users
 Content-Type: application/json 
  
 {
-    "name" : "ishu goel",
+    "name" : "ravi goel",
     "password" : "1234",
     "email" : "ishu@gmail.com",
     "age" : 22
 }
 
-### to Get an user
+### to Get an User by id and Password
 
 GET http://localhost:4545/users/6140d539bbe3781430e0bbe1/1234
 
-### Get user by POST method
+### Get User by POST method
 POST http://localhost:4545/users/getuser
 Content-Type: application/json
 

@@ -86,7 +86,10 @@ async function getuserbyidwithparams(req,res,next)
     {
        return res.status(404).json({ message : 'Cannot find user' })
     }
-    res.user = user
+    if(await bcrypt.compare(req.params.password , user.password))
+    {
+        res.user = user
+    }
     }
     catch(e)
     {

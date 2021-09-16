@@ -20,4 +20,4 @@ const usersSchema = new mongoose.Schema({
 })
 
 //export this schema
-module.exports = mongoose.model('facebook' , usersSchema)
+module.exports = mongoose.model('facebook' , usersSchema)    //facebook is our table name
